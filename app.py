@@ -1,7 +1,7 @@
 from flask import Flask, render_template, jsonify, redirect, url_for, request
 import os, json
 from datetime import datetime
-from ..agent import FoodMatchAgent
+from agent import FoodMatchAgent
 
 BASE = os.path.dirname(os.path.dirname(__file__))
 LOG_PATH = os.path.join(BASE, "logs", "logs.json")
